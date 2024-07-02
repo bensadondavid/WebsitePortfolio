@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav{
+    height: 8vh;
+    text-align: end;
+    background-color: #000000;
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0 ;}
+    to{ opacity: 1;}
+}
+
+nav a{
+    color : rgb(132, 63, 164);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 10px 0 10px;
+    display: inline-block;
+    border: solid #843fa4 1px;
+    padding: 0.5%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav a:hover{
+    color: #1b3098;
+    background-color: rgb(132, 63, 164);
+    border: none;
+    padding: 0.7%;
+}
+
+/* Home */
+
+.Home{
+    color: #000000 ;
+    background: linear-gradient(to bottom, #000000, #1b3098);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    line-height: 1.4;
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-60%); }
+    to { transform: translateX(0); }
+  }
+
+@keyframes slideRight {
+   from { transform: translateX(60%); }
+   to { transform: translateX(0); }
+ }
+
+@keyframes slideLeft{
+    from { transform: translateX(-350%); }
+    to { transform: translateX(0); }
+}
+
+.Presentation .firstphrase{
+    animation: slideIn 0.5s ease-in-out;
+    color: #cd8deb;
+}
+
+.Presentation .name{
+    animation: slideRight 0.5s ease-in-out;
+}
+
+.Presentation h2{
+    color: #7f439b;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.name{
+    color : #783895;
+    font-size: 2.5em;
+}
+
+.portfolio{
+    padding: 15px 25px;
+    border: solid 3px #843fa4;
+    border-radius: 50px;
+    background-color: #843fa4;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.portfolio:hover{
+    color: #1b3098;
+    border: solid 3px rgb(0, 0, 0);
+    background-color: rgb(132, 63, 164);
+}
+
+
+/* About */
+
+.navabout{
+    height: 8vh;
+    text-align: end;
+    background-color: #000000;
+}
+
+.navabout a{
+    color : rgb(132, 63, 164);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 10px 0 10px;
+    display: inline-block;
+    border: solid #843fa4 1px;
+    padding: 0.5%;
+    animation: slideFrom 1s ease-in-out;
+    z-index: 1000;
+}
+
+.navabout a:hover{
+    color: #1b3098;
+    background-color:rgb(132, 63, 164);
+    border: none;
+    padding: 0.7%;
+}
+
+.about{
+    background: linear-gradient(to bottom, #000000, #1b3098);
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.about .title{
+    padding: 10vh 0 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title hr{
+    width: 6vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+    border: none;
+    animation: slideLeft 1s ease-in-out;
+}
+
+@keyframes slideFrom{
+    from{ transform : translateY(-100%)}
+    to{ transform: translateY(0);}
+}
+
+.myprinciples{
+    padding: 2%;
+}
+
+.hAndp{
+    width: 8vw;
+}
+
+.hexagons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    width: 60vw;
+    color: #fff;
+    text-align: center;
+}
+
+.hexagon1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:#cf95ea;
+    background-image: url('/compteur.png');
+    background-size: 60%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    animation: circle 1s ease-in-out;
+  }
+
+.hexagon2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:rgb(207, 149, 234);
+    background-image: url('/bulb.png');
+    background-size: 60%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    animation: circle 1s ease-in-out;
+}
+
+.hexagon3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:#cf95ea;
+    background-image: url('/rocket.png');
+    background-size: 60%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    animation: circle 1s ease-in-out;
+  }
+
+@keyframes circle{
+    from{ transform: scale(0)}
+    to{transform: scale(1);}
+}
+
+.description{
+    background-color:rgb(207, 149, 234, 50%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 20px;
+    overflow-y: scroll;
+    line-height: 1.5;
+    animation: slideOut 1s ease-in-out;
+    margin-top: 20px ;
+}
+
+.firstp::first-letter{
+    font-size: 3em;
+    color: #cf95ea;
+}
+
+@keyframes slideOut{
+    from{ transform : translateY(200%)}
+    to{ transform: translateY(0);}
+}
+
+
+/* Resume */
+
+.resume{
+    background: linear-gradient(to bottom, #000000, #1b3098);
+}
+
+.navresume{
+    height: 8vh;
+    text-align: end;
+}
+
+.navresume a{
+    color : rgb(132, 63, 164);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 10px 0 10px;
+    display: inline-block;
+    border: solid #843fa4 1px;
+    padding: 0.5%;
+    animation: slideFrom 1s ease-in-out;
+}
+
+.navresume a:hover{
+    color: #1b3098;
+    background-color:rgb(132, 63, 164);
+    border: none;
+    padding: 0.7%;
+}
+
+.cv{
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    height: 92vh;
+}
+
+.cv img{
+    height: 100%;
+    margin: 20px 0;
+    position: relative;
+    animation: circle 1s ease-in-out;
+}
+
+.cv2{
+    height: 100%;
+    width: 35%;
+}
+
+.resumebutton{
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    opacity: 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    background-color: #1b3098;
+    border-radius: 5px;
+    border: none;
+}
+
+.resumebutton:hover{
+    background-color: #783895;
+}
+
+.cv2:hover .resumebutton{
+    opacity: 1;
+}
+
+
+/* Contact */
+
+.contact{
+    background: linear-gradient(to bottom, #000000, #1b3098);
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.contact .contacttitle{
+    padding: 10vh 0 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacttitle h1{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contacttitle hr{
+    width: 6vw;
+    height: 0.5vh;
+    background-color: #ffffff;
+    border: none;
+    animation: slideLeft 1s ease-in-out;
+    margin-bottom: 12%;
+}
+
+.form-container{
+    width: 30vw;
+    height: 40vh;
+    border: #fff solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.form-container h2{
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+}
+
+.contactform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.contactform input, textarea{
+    width: 50%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+}
+
+.contactform button{
+    width: 25%;
+    height: 10%;
+    background-color: #783895;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contactform button:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
