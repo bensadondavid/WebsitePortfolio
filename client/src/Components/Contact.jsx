@@ -34,11 +34,11 @@ return (
           <img className='github-logo' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
            style={{width: '24px', verticalAlign: 'middle'}} />Github</button></a>
 
-        <a target='blank' href="https://www.instagram.com/davidbensadonn"><button className="Facebook"><img className='facebook-logo'
+        <a target='blank' href="https://www.facebook.com/profile.php?id=100009577190184"><button className="Facebook"><img className='facebook-logo'
               src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
               alt="Facebook"/>Facebook</button></a>
 
-        <a target='blank' href="https://www.facebook.com/profile.php?id=100009577190184"><button className="Instagram" ><img
+        <a target='blank' href="https://www.instagram.com/davidbensadonn"><button className="Instagram" ><img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
               alt="Instagram"
               className="instagram-logo"
