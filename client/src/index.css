@@ -369,7 +369,13 @@ nav a:hover{
     background-color: #ffffff;
     border: none;
     animation: slideLeft 1s ease-in-out;
-    margin-bottom: 12%;
+    margin-bottom: 50%;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
 }
 
 .form-container{
@@ -380,10 +386,11 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     overflow-y: scroll;
+    border-radius: 20px;
 }
 
 .form-container h2{
-    padding: 2%;
+    padding: 4%;
     text-align: center;
     color: #fff;
 }
@@ -401,8 +408,15 @@ nav a:hover{
 .contactform input, textarea{
     width: 50%;
     height: 10%;
-    border-radius: 5px;
     border: none;
+    border-bottom: #fff solid 3px;
+    background-color: transparent;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #007BFF;
 }
 
 .contactform button{
@@ -419,3 +433,96 @@ nav a:hover{
     color: #000000;
 }
 
+.networktitle{
+    color: #fff;
+    margin: 3% 0;
+    text-align: center;
+}
+
+.networks{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+
+
+.networksButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.networksButtons a{
+    text-decoration: none;
+}
+
+.Github {
+    width: 150px; 
+    display: flex;
+    align-items: center;
+    padding: 10px 31px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .Github:hover {
+    background-color: #555;
+  }
+  
+  .github-logo {
+    width: 28px;
+    margin-right: 10px;
+  }
+
+  .Facebook {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .Facebook:hover {
+    background-color: #2d4373;
+  }
+  
+  .facebook-logo {
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  .Instagram {
+    width: 150px; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .Instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #ffe54c 0%, #ffe54c 5%, #ff5a5f 45%, #d823b8 60%, #3b60e4 90%);
+}
+  
+  .instagram-logo {
+    width: 24px;
+  margin-right: 10px;
+  }
