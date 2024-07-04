@@ -13,12 +13,21 @@ return (
       <Link to='/contact'>Contact</Link>
     </nav>
 
-    <div className="contact">
+    <div className="portfolio">
 
-      <div className="contacttitle">
-        <h1>Currenty building this section</h1>
+      <div className="portfolio-title">
+        <h1>Portfolio</h1>
         <hr/>
        </div>
+
+       <div className="portfolio-container">
+        <div className="project1"></div>
+        <div className="project2"></div>
+        <div className="project3"></div>
+        <div className="project4"></div>
+        <div className="project5"></div>
+        <div className="project6"></div>
+       </div >
 
     </div>
     </>

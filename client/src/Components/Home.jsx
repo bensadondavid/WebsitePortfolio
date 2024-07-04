@@ -23,7 +23,7 @@ const Home = () => {
                     <h1 className="name">David Bensadon.</h1> 
                     <h2>I'm a Full-stack web developper.</h2>
                 </div>
-                <Link to='/portfolio'><button className="portfolio">View Portfolio</button></Link>
+                <Link to='/portfolio'><button className="portfoliobutton">View Portfolio</button></Link>
                 </div>
         </div>
         </>
