@@ -645,8 +645,6 @@ nav a:hover{
     width: 90vw;
     height: 60vh;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
