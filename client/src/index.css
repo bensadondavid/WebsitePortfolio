@@ -651,58 +651,122 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 5%;
+    
 }
 
-/* .project1{
-    width: 25vw;
-    height: 50%;
-    background-image: url('homefinder.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+.project1{
+    position: relative;
 }
+.project1 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
+}
+
+.project1:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
+}
+
 
 .project2{
-    width: 25vw;
-    height: 50%;
-    background-image: url('serenewaves.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
 }
+.project2 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
+}
+
+.project2:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
+}
+
 
 .project3{
-    width: 25vw;
-    height: 50%;
-    background-image: url('wordsgames.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
 }
+.project3 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
+}
+
+.project3:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
+}
+
 
 .project4{
-    width: 25vw;
-    height: 50%;
-    background-image: url('todolist.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+}
+.project4 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
 }
 
+.project4:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
+}
+
+
 .project5{
-    width: 25vw;
-    height: 50%;
-    background-image: url('magicslate.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+}
+.project5 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
+}
+
+.project5:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
 }
 
 .project6{
-    width: 25vw;
-    height: 50%;
-    background-image: url('robofriends.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+    position: relative;
+}
+.project6 button{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    visibility: hidden;
+    padding: 5% 10%;
+}
+
+.project6:hover button{
+    visibility: visible;
+    animation: circle 0.3s ease-in-out;
+}
+
+.imgh{
+    width: 100%;
+    height: 100%;
+}
+
+.imgh:hover{
+    opacity: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.buttonh{
+    background-color: #8e49ae;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
