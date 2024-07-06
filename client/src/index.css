@@ -656,6 +656,7 @@ nav a:hover{
 
 .project1{
     position: relative;
+    animation: slideIn 1s ease-in-out;
 }
 .project1 button{
     position: absolute;
@@ -673,6 +674,7 @@ nav a:hover{
 
 .project2{
     position: relative;
+    animation: slideFrom 1s ease-in-out;
 }
 .project2 button{
     position: absolute;
@@ -690,6 +692,7 @@ nav a:hover{
 
 .project3{
     position: relative;
+    animation: slideRight 1s ease-in-out;
 }
 .project3 button{
     position: absolute;
@@ -707,6 +710,7 @@ nav a:hover{
 
 .project4{
     position: relative;
+    animation: slideIn 1s ease-in-out;
 }
 .project4 button{
     position: absolute;
@@ -724,6 +728,7 @@ nav a:hover{
 
 .project5{
     position: relative;
+    animation: slideOut 1s ease-in-out;
 }
 .project5 button{
     position: absolute;
@@ -740,6 +745,7 @@ nav a:hover{
 
 .project6{
     position: relative;
+    animation: slideRight 1s ease-in-out;
 }
 .project6 button{
     position: absolute;
