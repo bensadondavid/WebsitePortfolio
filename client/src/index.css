@@ -380,6 +380,14 @@ nav a:hover{
     animation: circle 1s ease;
 }
 
+@media(max-width : 760px){
+    .cv2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .cv2{
     height: 100%;
     width: 35%;
