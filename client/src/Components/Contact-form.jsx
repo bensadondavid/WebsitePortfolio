@@ -47,11 +47,11 @@ const HandleMessage = (e)=>{
 
         <form className='contactform' ref={form} onSubmit={sendEmail}>
 
-          <input type="text" name="user_name" placeholder='Your name' value={name} onChange={HandleName}/>
+          <input type="text" name="user_name" placeholder='Your name' value={name} onChange={HandleName} required/>
 
-          <input type="email" name="user_email" placeholder='Your E-mail' value={email} onChange={HandleEmail}/>
+          <input type="email" name="user_email" placeholder='Your E-mail' value={email} onChange={HandleEmail} required/>
 
-          <textarea name="message" placeholder='Your message' value={message} onChange={HandleMessage}/>
+          <textarea name="message" placeholder='Your message' value={message} onChange={HandleMessage} required/>
 
           <button type="submit" value="Send">Send</button>
 
