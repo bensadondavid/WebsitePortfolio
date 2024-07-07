@@ -10,10 +10,9 @@
   $shadows-medium: multiple-box-shadow(200);
   $shadows-big: multiple-box-shadow(100);
   
-  .firstpage {
+  .html {
     background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
     overflow: hidden;
-    height: 92vh;
   }
   
   #stars {
