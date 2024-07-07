@@ -6,11 +6,12 @@ const Home = () => {
 
     return(
         <>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="title"></div>
+       
             <div className="firstpage">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="title"></div>
                 <nav>
                 <Link to='/about'>About</Link>
                 <Link to='/portfolio'>Portfolio</Link>
