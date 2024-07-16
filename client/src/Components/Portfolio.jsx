@@ -4,7 +4,7 @@ import serenewaves from  '/src/serenewaves.png'
 import todolist from  '/src/todolist.png'
 import wordsgame from  '/src/wordsgames.png'
 import magicslate from  '/src/magicslate.png'
-import robofriends from  '/src/robofriends.png'
+import esthair from'/esthair.png'
 
 
 const Portfolio = () => {
@@ -60,8 +60,8 @@ return (
           <a href="https://serenewaves.onrender.com" target="_blank"><button className="buttonh">See</button></a>
           </div>
         <div className="project3" style={style3}>
-        <img src={robofriends} className="imgh" />
-          <a href="https://di-bootcamp.onrender.com" target="_blank"><button className="buttonh">See</button></a>
+        <img src={esthair} className="imgh" />
+          <a href="https://est-hair.onrender.com" target="_blank"><button className="buttonh">See</button></a>
           </div>
         <div className="project4" style={style4}>
         <img src={todolist} className="imgh" />
