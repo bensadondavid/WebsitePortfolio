@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import homefinder from '/src/homefinder.png';
-import serenewaves from '/src/serenewaves.png';
-import todolist from '/src/todolist.png';
-import wordsgame from '/src/wordsgames.png';
-import magicslate from '/src/magicslate.png';
-import esthair from '/src/esthair.png';
+import homefinder from '/public/homefinder.png';
+import serenewaves from '/public/serenewaves.png';
+import todolist from '/public/todolist.png';
+import wordsgame from '/public/wordsgames.png';
+import magicslate from '/public/magicslate.png';
+import esthair from '/public/esthair.png';
 
 const Portfolio = () => {
   const style = {
