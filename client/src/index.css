@@ -1,11 +1,12 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-nav{
+/* Navigation Styles */
+nav {
     height: 8vh;
     text-align: end;
     background-color: #000000;
@@ -13,58 +14,39 @@ nav{
     justify-content: end;
 }
 
-@keyframes fadeIn{
-    from{ opacity: 0 ;}
-    to{ opacity: 1;}
-}
-
-nav a{
-    color : rgb(132, 63, 164);
+nav a {
+    color: rgb(132, 63, 164);
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
     margin: 20px 10px 0 10px;
-    border: none;
     padding: 0.5%;
     animation: fadeIn 1s ease-in-out;
 }
 
-@media (max-width :700px){
-    nav a{
-        color : rgb(132, 63, 164);
+@media (max-width: 700px) {
+    nav a {
         font-size: 0.8rem;
-        font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
-        text-transform: uppercase;
-        margin: 20px 10px 0 10px;
-        border: none;
-        padding: 0.5%;
-        animation: fadeIn 1s ease-in-out;
     }
 }
 
-nav a:hover{
+nav a:hover {
     color: #1b3098;
     background-color: rgb(132, 63, 164);
-    border: none;
     padding: 0.7%;
 }
 
-@media (max-width : 700px){
-    nav a:hover{
-        color: #1b3098;
+@media (max-width: 700px) {
+    nav a:hover {
         background-color: transparent;
-        border: none;
     }
 }
 
-/* Home */
-
-.Home{
-    color: #000000 ;
+/* Home Page Styles */
+.Home {
+    color: #000000;
     background: linear-gradient(to bottom, #000000, #1b3098);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
     line-height: 1.4;
     height: 92vh;
@@ -75,41 +57,26 @@ nav a:hover{
     align-items: center;
 }
 
-@keyframes slideIn {
-    from { transform: translateX(-60%); }
-    to { transform: translateX(0); }
-  }
-
-@keyframes slideRight {
-   from { transform: translateX(60%); }
-   to { transform: translateX(0); }
- }
-
-@keyframes slideLeft{
-    from { transform: translateX(-350%); }
-    to { transform: translateX(0); }
-}
-
-.Presentation .firstphrase{
+.Presentation .firstphrase {
     animation: slideIn 0.5s ease-in-out;
     color: #cd8deb;
 }
 
-.Presentation .name{
+.Presentation .name {
     animation: slideRight 0.5s ease-in-out;
 }
 
-.Presentation h2{
+.Presentation h2 {
     color: #7f439b;
     animation: slideIn 0.5s ease-in-out;
 }
 
-.name{
-    color : #783895;
+.name {
+    color: #783895;
     font-size: 2.5em;
 }
 
-.portfoliobutton{
+.portfoliobutton {
     padding: 15px 25px;
     border: solid 3px #843fa4;
     border-radius: 50px;
@@ -120,16 +87,14 @@ nav a:hover{
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.portfoliobutton:hover{
+.portfoliobutton:hover {
     color: #1b3098;
     border: solid 3px rgb(0, 0, 0);
     background-color: rgb(132, 63, 164);
 }
 
-
-/* About */
-
-.navabout{
+/* About Page Styles */
+.navabout {
     height: 8vh;
     text-align: end;
     background-color: #000000;
@@ -137,49 +102,37 @@ nav a:hover{
     justify-content: end;
 }
 
-.navabout a{
-    color : rgb(132, 63, 164);
+.navabout a {
+    color: rgb(132, 63, 164);
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     margin: 20px 10px 0 10px;
-    border: none;
     padding: 0.5%;
     animation: slideFrom 1s ease-in-out;
     z-index: 1000;
 }
 
-@media (max-width :700px){
-    .navabout a{
-        color : rgb(132, 63, 164);
+@media (max-width: 700px) {
+    .navabout a {
         font-size: 0.8rem;
-        font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
-        text-transform: uppercase;
-        margin: 20px 10px 0 10px;
-        border: none;
-        padding: 0.5%;
-        animation: fadeIn 1s ease-in-out;
     }
 }
 
-.navabout a:hover{
+.navabout a:hover {
     color: #1b3098;
-    background-color:rgb(132, 63, 164);
-    border: none;
+    background-color: rgb(132, 63, 164);
     padding: 0.7%;
 }
 
-@media (max-width : 700px){
-    .navabout a:hover{
-        color: #1b3098;
+@media (max-width: 700px) {
+    .navabout a:hover {
         background-color: transparent;
-        border: none;
     }
 }
 
-.about{
+.about {
     background: linear-gradient(to bottom, #000000, #1b3098);
     height: 92vh;
     display: flex;
@@ -188,21 +141,20 @@ nav a:hover{
     overflow-y: scroll;
 }
 
-.about .title{
+.about .title {
     padding: 10vh 0 2vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title h1{
+.title h1 {
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1.5vh;
     animation: fadeIn 1s ease-in-out;
 }
 
-.title hr{
+.title hr {
     width: 6vw;
     height: 0.5vh;
     background-color: #ffffff;
@@ -210,20 +162,15 @@ nav a:hover{
     animation: slideLeft 1s ease-in-out;
 }
 
-@keyframes slideFrom{
-    from{ transform : translateY(-100%)}
-    to{ transform: translateY(0);}
-}
-
-.myprinciples{
+.myprinciples {
     padding: 2%;
 }
 
-.hAndp{
+.hAndp {
     width: 8vw;
 }
 
-.hexagons{
+.hexagons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -234,60 +181,33 @@ nav a:hover{
     text-align: center;
 }
 
-.hexagon1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color:#cf95ea;
-    background-image: url('/compteur.png');
-    background-size: 60%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-    display: inline-block;
-    text-align: center;
-    animation: circle 1s ease-in-out;
-  }
-
-.hexagon2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color:rgb(207, 149, 234);
-    background-image: url('/bulb.png');
-    background-size: 60%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-    display: inline-block;
-    text-align: center;
-    animation: circle 1s ease-in-out;
-}
-
+.hexagon1,
+.hexagon2,
 .hexagon3 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color:#cf95ea;
-    background-image: url('/rocket.png');
-    background-size: 60%; 
+    background-color: #cf95ea;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 15px;
     display: inline-block;
     text-align: center;
     animation: circle 1s ease-in-out;
-  }
-
-@keyframes circle{
-    from{ transform: scale(0)}
-    to{transform: scale(1);}
 }
 
-.description{
-    background-color:rgb(207, 149, 234, 50%);
+.hexagon2 {
+    background-color: rgb(207, 149, 234);
+}
+
+.hexagon3 {
+    background-color: #cf95ea;
+}
+
+.description {
+    background-color: rgba(207, 149, 234, 0.5);
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 2.5%;
     display: flex;
     flex-direction: column;
@@ -298,81 +218,62 @@ nav a:hover{
     overflow-y: scroll;
     line-height: 1.5;
     animation: slideOut 1s ease-in-out;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
-.firstp::first-letter{
+.firstp::first-letter {
     font-size: 3em;
     color: #cf95ea;
 }
 
-@keyframes slideOut{
-    from{ transform : translateY(200%)}
-    to{ transform: translateY(0);}
-}
-
-
-/* Resume */
-
-.resume{
+/* Resume Page Styles */
+.resume {
     background: linear-gradient(to bottom, #000000, #1b3098);
 }
 
-.navresume{
+.navresume {
     height: 8vh;
     display: flex;
     justify-content: end;
 }
 
-.navresume a{
-    color : rgb(132, 63, 164);
+.navresume a {
+    color: rgb(132, 63, 164);
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     margin: 20px 10px 0 10px;
-    border: none;
     padding: 0.5%;
     animation: slideFrom 1s ease-in-out;
 }
 
-@media (max-width :700px){
-    .navresume a{
-        color : rgb(132, 63, 164);
+@media (max-width: 700px) {
+    .navresume a {
         font-size: 0.8rem;
-        font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
-        text-transform: uppercase;
-        margin: 20px 10px 0 10px;
-        border: none;
-        padding: 0.5%;
-        animation: fadeIn 1s ease-in-out;
     }
 }
 
-.navresume a:hover{
+.navresume a:hover {
     color: #1b3098;
-    background-color:rgb(132, 63, 164);
-    border: none;
+    background-color: rgb(132, 63, 164);
     padding: 0.7%;
 }
 
-@media (max-width : 700px){
-    .navresume a:hover{
-        color: #1b3098;
+@media (max-width: 700px) {
+    .navresume a:hover {
         background-color: transparent;
-        border: none;
     }
 }
 
-.cv{
+.cv {
     display: flex;
     justify-content: center;
     overflow-y: auto;
     height: 92vh;
 }
 
-.cv img{
+.cv img {
     height: auto;
     max-width: 100%;
     margin: 20px 0;
@@ -380,8 +281,8 @@ nav a:hover{
     animation: circle 1s ease;
 }
 
-@media(max-width : 760px){
-    .cv2{
+@media (max-width: 760px) {
+    .cv2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -389,13 +290,13 @@ nav a:hover{
     }
 }
 
-.cv2{
+.cv2 {
     height: 100%;
     width: 35%;
     position: relative;
 }
 
-.resumebutton{
+.resumebutton {
     position: absolute;
     top: 55%;
     left: 48%;
@@ -408,19 +309,16 @@ nav a:hover{
     border: none;
 }
 
-
-.resumebutton:hover{
+.resumebutton:hover {
     background-color: #783895;
 }
 
-.cv2:hover .resumebutton{
+.cv2:hover .resumebutton {
     opacity: 1;
 }
 
-
-/* Contact */
-
-.contact{
+/* Contact Page Styles */
+.contact {
     background: linear-gradient(to bottom, #000000, #1b3098);
     height: 92vh;
     display: flex;
@@ -429,21 +327,20 @@ nav a:hover{
     padding: 3%;
 }
 
-.contact .contacttitle{
+.contact .contacttitle {
     padding: 10vh 0 2vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contacttitle h1{
+.contacttitle h1 {
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1.5vh;
     animation: fadeIn 1s ease-in-out;
 }
 
-.contacttitle hr{
+.contacttitle hr {
     width: 6vw;
     height: 0.5vh;
     background-color: #ffffff;
@@ -452,13 +349,13 @@ nav a:hover{
     margin-bottom: 50%;
 }
 
-.contact-container{
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20%;
 }
 
-.form-container{
+.form-container {
     width: 30vw;
     height: 40vh;
     border: #fff solid 2px;
@@ -469,13 +366,13 @@ nav a:hover{
     border-radius: 20px;
 }
 
-.form-container h2{
+.form-container h2 {
     padding: 4%;
     text-align: center;
     color: #fff;
 }
 
-.contactform{
+.contactform {
     width: 100%;
     height: 100%;
     display: flex;
@@ -485,7 +382,7 @@ nav a:hover{
     gap: 10%;
 }
 
-.contactform input, textarea{
+.contactform input, textarea {
     width: 50%;
     height: 10%;
     border: none;
@@ -493,18 +390,17 @@ nav a:hover{
     background-color: transparent;
 }
 
-.contactform input, textarea::placeholder{
+.contactform input, textarea::placeholder {
     color: white;
 }
 
-
 .contactform input:focus,
 .contactform textarea:focus {
-  outline: none;
-  border-bottom: 2px solid #007BFF;
+    outline: none;
+    border-bottom: 2px solid #007BFF;
 }
 
-.contactform button{
+.contactform button {
     width: 25%;
     height: 10%;
     background-color: #783895;
@@ -513,18 +409,18 @@ nav a:hover{
     cursor: pointer;
 }
 
-.contactform button:hover{
+.contactform button:hover {
     background-color: #fff;
     color: #000000;
 }
 
-.networktitle{
+.networktitle {
     color: #fff;
     margin: 3% 0;
     text-align: center;
 }
 
-.networks{
+.networks {
     height: 100%;
     width: 100%;
     display: flex;
@@ -532,8 +428,7 @@ nav a:hover{
     gap: 15%;
 }
 
-
-.networksButtons{
+.networksButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -541,12 +436,12 @@ nav a:hover{
     gap: 20px;
 }
 
-.networksButtons a{
+.networksButtons a {
     text-decoration: none;
 }
 
 .Github {
-    width: 150px; 
+    width: 150px;
     display: flex;
     align-items: center;
     padding: 10px 31px;
@@ -556,20 +451,19 @@ nav a:hover{
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-  }
-  
-  .Github:hover {
+}
+
+.Github:hover {
     background-color: #555;
-  }
-  
-  .github-logo {
+}
+
+.github-logo {
     width: 28px;
     margin-right: 10px;
-  }
+}
 
-  .Facebook {
+.Facebook {
     width: 150px;
-
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -579,19 +473,19 @@ nav a:hover{
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-  }
-  
-  .Facebook:hover {
+}
+
+.Facebook:hover {
     background-color: #2d4373;
-  }
-  
-  .facebook-logo {
+}
+
+.facebook-logo {
     width: 24px;
     margin-right: 10px;
-  }
+}
 
-  .Instagram {
-    width: 150px; 
+.Instagram {
+    width: 150px;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -601,22 +495,20 @@ nav a:hover{
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-  }
-  
-  .Instagram:hover {
+}
+
+.Instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fae56b 0%, #f9e159 5%, #f4686d 45%, #ed2cc9 60%, #3f66f3 90%);
 }
-  
-  .instagram-logo {
-    width: 24px;
-  margin-right: 10px;
-  }
 
+.instagram-logo {
+    width: 24px;
+    margin-right: 10px;
+}
 
 /* Portfolio */
 
-
-.portfolio{
+.portfolio {
     background: linear-gradient(to bottom, #000000, #1b3098);
     height: 92vh;
     display: flex;
@@ -626,23 +518,22 @@ nav a:hover{
     overflow-y: scroll;
 }
 
-.portfolio-title{
-    color :#fff;
+.portfolio-title {
+    color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.portfolio-title h1{
+.portfolio-title h1 {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1.5vh;
     animation: fadeIn 1s ease-in-out;
 }
 
-.portfolio-title hr{
+.portfolio-title hr {
     width: 6vw;
     height: 0.5vh;
     background-color: #ffffff;
@@ -651,8 +542,7 @@ nav a:hover{
     margin-bottom: 50%;
 }
 
-
-.portfolio-container{
+.portfolio-container {
     width: 90vw;
     height: 60vh;
     display: grid;
@@ -662,14 +552,14 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 5%;
-    
 }
 
-.project1{
+.project1 {
     position: relative;
     animation: slideIn 1s ease-in-out;
 }
-.project1 button{
+
+.project1 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -677,17 +567,17 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project1:hover button{
+.project1:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-
-.project2{
+.project2 {
     position: relative;
     animation: slideFrom 1s ease-in-out;
 }
-.project2 button{
+
+.project2 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -695,17 +585,17 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project2:hover button{
+.project2:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-
-.project3{
+.project3 {
     position: relative;
     animation: slideRight 1s ease-in-out;
 }
-.project3 button{
+
+.project3 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -713,17 +603,17 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project3:hover button{
+.project3:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-
-.project4{
+.project4 {
     position: relative;
     animation: slideIn 1s ease-in-out;
 }
-.project4 button{
+
+.project4 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -731,17 +621,17 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project4:hover button{
+.project4:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-
-.project5{
+.project5 {
     position: relative;
     animation: slideOut 1s ease-in-out;
 }
-.project5 button{
+
+.project5 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -749,16 +639,17 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project5:hover button{
+.project5:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-.project6{
+.project6 {
     position: relative;
     animation: slideRight 1s ease-in-out;
 }
-.project6 button{
+
+.project6 button {
     position: absolute;
     top: 45%;
     left: 38%;
@@ -766,22 +657,22 @@ nav a:hover{
     padding: 5% 10%;
 }
 
-.project6:hover button{
+.project6:hover button {
     visibility: visible;
     animation: circle 0.3s ease-in-out;
 }
 
-.imgh{
+.imgh {
     width: 100%;
     height: 100%;
 }
 
-.imgh:hover{
+.imgh:hover {
     opacity: 50%;
     transition: opacity 0.3s ease-in-out;
 }
 
-.buttonh{
+.buttonh {
     background-color: #8e49ae;
     border: none;
     cursor: pointer;
