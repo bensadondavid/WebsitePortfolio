@@ -61,6 +61,10 @@ nav a:hover{
 
 /* Home */
 
+.firstpage{
+    height: 100vh;
+}
+
 .Home{
     color: #000000 ;
     background: linear-gradient(to bottom, #000000, #1b3098);

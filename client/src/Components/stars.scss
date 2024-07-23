@@ -1,5 +1,4 @@
 @function multiple-box-shadow($n) {
-  // Génère une chaîne de valeurs de box-shadow aléatoires
   $value: '#{random(2000)}px #{random(2000)}px #843fa4';
   @for $i from 2 through $n {
     $value: '#{$value}, #{random(2000)}px #{random(2000)}px #ffffffc3';
@@ -7,7 +6,6 @@
   @return unquote($value);
 }
 
-// Génération des différentes tailles d'ombres pour les étoiles
 $shadows-small: multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
@@ -15,12 +13,6 @@ $shadows-big: multiple-box-shadow(100);
 .firstpage {
   background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
   overflow: hidden;
-}
-
-#stars, #stars2, #stars3 {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #stars {
@@ -73,6 +65,7 @@ $shadows-big: multiple-box-shadow(100);
     box-shadow: $shadows-big;
   }
 }
+
 
 @keyframes animStar {
   from {
